@@ -23,8 +23,10 @@ class SheepPlugin extends PluginBase {
 	private $commandManager;
 
 	public function onEnable() {
-		require "../../vendor/autoload.php";
-		define("Sheep\\PLUGIN_PATH", constant("pocketmine\\PLUGIN_PATH"));
+        echo __FILE__ . PHP_EOL;
+        require "/Users/jazzwhistle/PocketMine/plugins/Sheep/vendor/autoload.php";
+        define("Sheep\\PLUGIN_PATH", constant("pocketmine\\PLUGIN_PATH"));
+
 
 		$asyncHandler = new PMAsyncHandler($this->getServer()->getScheduler());
 		$this->api = Sheep::getInstance();
