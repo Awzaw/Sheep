@@ -4,5 +4,4 @@ branches:
 projects:
   Sheep:
     path: ""
-    stub: "stub.php"
 ...
